@@ -81,6 +81,10 @@ And then you can use it in every controllers which inherited from ApplicationCon
 ```ruby
 class UsersController < ApplicationController
   findable :user
+
+  def destroy
+    @user.destroy # now you can just call @user here
+  end
 end
 ```
 
